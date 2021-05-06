@@ -1,0 +1,80 @@
+body {background-color: grey;}
+
+#container{
+  background-color:coral;
+  margin: auto;
+  width: 60%;
+  padding:15px;
+}
+
+#title{
+  text-align:center;
+  font-family:'Source Sans Pro', sans-serif;
+}
+
+#description{
+  text-align:justify;
+  font-family:'Source Sans Pro', sans-serif;
+  font-size:60%;
+  font-style:italic;
+}
+#survey-content{
+  font-family:'Mukta', sans-serif;
+  font-size:50%;
+  text-align:initial;
+  
+}
+input[type=text], select {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type=number], select {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  min:10;
+  max:100;
+}
+
+
+
+input[type=email], select {
+  width: 95%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+  
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#survey-left{
+  width:20%;
+  padding: 10px;
+  flex: 30%;
+  margin: 8px 0;
+  
+}
+ 
+#survey-right{
+  width:20%;
+  padding: 10px;
+  flex: 50%;
+  margin: 8px 0;
+}
+
