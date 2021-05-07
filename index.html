@@ -11,42 +11,93 @@
 <body>
 
 
-<div id= "container">
-<h1 id="title">FIFA 21 FUT SURVEY<h1>
-  <p id="description">Short survey on how to improve gameplay</p>
-  <form id="survey-form">
+  <div id= "container">
+    <h1 id="title">FIFA 21  SURVEY<h1>
+      <p id="description">Short survey on how to improve gameplay</p>
+      <form id="survey-form">
+        
+      <div id="survey-content">
+        <label id="name-label">Name:</label><br>
+        <input type="text" id="name" placeholder="ENTER YOUR NAME" required=""><br>
+        
+        <label id="email-label">Email:</label><br>
+        <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required=""><br>
+      
+      
+      <div class="flex-container">
+         <div id="survey-left">   
+          <label id="number-label">Age:</label>
+          <input type="number" id="number" placeholder="AGE" required="" MIN="10" MAX="100">        
+         </div> 
     
-  <div id="survey-content">
-    <label id="name-label">Name:</label><br>
-    <input type="text" id="name" placeholder="ENTER YOUR NAME" required=""><br>
+         <div id="survey-right">   
+          <label id="dropdown">Skill Level:</label>
+          <select level="skill"  id="dropdown" required="">
+            <option disabled selected value> -- Select an option -- </option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+            <option value="pro">Professional Player</option> 
+           </select> 
+         </div> 
+       </div>
+        
+        <div>
+          <p>What game-mode do you play often?</p>
+          <input type="radio" name="mode" id="fut"  value="fut"checked>
+          <label for="fut">Ultimate Team</label><br>
+          
+          <input type="radio" name="mode" id="career" value="career">
+          <label for="career">Carrer Mode</label><br>      
     
-    <label id="email-label">Email:</label><br>
-    <input type="email" id="email" placeholder="ENTER YOUR EMAIL" required=""><br>
-  
-  
-  <div class="flex-container">
-     <div id="survey-left">   
-      <label id="number-label">Age:</label>
-      <input type="number" id="number" placeholder="AGE" required="" MIN="10" MAX="100">        
-     </div> 
-
-     <div id="survey-right">   
-      <label id="dropdown">Skill Level:</label>
-      <select level="skill"  id="dropdown" required="">
-        <option disabled selected value> -- Select an option -- </option>
-        <option value="beginner">Beginner</option>
-        <option value="intermediate">Intermediate</option>
-        <option value="advanced">Advanced</option>
-        <option value="pro">Professional Player</option>           
-     </div> 
-   </div>
+          <input type="radio" name="mode" id="pro" value="pro">
+          <label for="pro">PRO Clubs</label><br>      
     
-    
-    
-    
-    </form>
-  
-  </div>
+          <input type="radio" name="mode" id="seasons" value="seasoms">
+          <label for="seasons">Seasons</label><br> 
+          
+          
+          <input type="radio" name="mode" id="skill" value="skill">
+          <label for="skill">Skill Games</label><br>       
+        </div>
+        
+        <div>
+          <p>What ares of gameplay do yow want it fixed? 
+            <br>(Select all that apply)</p>
+            <input type="checkbox" id="fix1" name="fix1" value="connection">
+            <label for="fix1">Connection</label><br>
+          
+            <input type="checkbox" id="fix2" name="fix2" value="ball">
+            <label for="fix2">Ball Direction</label><br> 
+          
+            <input type="checkbox" id="fix3" name="fix3" value="game-speed">
+            <label for="fix3">Game Speed</label><br>
+          
+            <input type="checkbox" id="fix4" name="fix4" value="refree-decision">
+            <label for="fix4">Refree Decision</label><br>
+          
+            <input type="checkbox" id="fix5" name="fix5" value="match-making">
+            <label for="fix5">Match Making</label><br>  
+          
+            <input type="checkbox" id="fix6" name="fix6" value="unrealistic">
+            <label for="fix6">Unrealistic Movements</label><br><br>            
+        </div> 
+        
+        <div>
+            <label for="comments">Additional Feedback:</label><br><br>
+              <textarea id="comments" name="comments">
+              </textarea>    
+        </div><br>  
+        
+        <div id="button">
+          <input type="submit" id="submit" value="Submit">   
+        </div>
+        
+        
+        </form>
+      
+      </div>
+      
   
    
 </body>
